@@ -15,7 +15,7 @@ cd 3x-ui
 
 cp docker-compose.yml docker-compose.yml.bak
 
-sed -i 's/:latest/:v2.4.11/' docker-compose.yml
+sed -i 's/:latest/:v2.5.5/' docker-compose.yml
 
 docker-compose up -d
 

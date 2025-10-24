@@ -9,13 +9,13 @@ apt install docker.io docker-compose git curl bash openssl nano speedtest-cli -y
 speedtest
 speedtest
 
-git clone https://github.com/MHSanaei/3x-ui.git
+git clone --branch v2.6.0 --single-branch https://github.com/MHSanaei/3x-ui.git
 
 cd 3x-ui
 
 cp docker-compose.yml docker-compose.yml.bak
 
-sed -i 's/:latest/:v2.6.7/' docker-compose.yml
+sed -i 's/:latest/:v2.6.0/' docker-compose.yml
 
 docker-compose up -d
 
